@@ -2,7 +2,7 @@ import React from "react";
 
 import ListItem from "./ListItem";
 
-const SongList = ({ songs }) => {
+const SongList = ({ songs, handleRemove }) => {
     return (
         <div>
             <h1>SongList</h1>
@@ -11,6 +11,7 @@ const SongList = ({ songs }) => {
                     <ListItem
                         key={song.id}
                         song={song}
+                        handleRemove={handleRemove}
                     />
                 ))}
             </ul>
