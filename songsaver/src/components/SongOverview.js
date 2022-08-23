@@ -16,6 +16,7 @@ class SongOverview extends Component {
                 { id: 4, song: "KEVER", artist: "Joeee", genre: "Pop", rating: "4" }
             ]
         }
+        this.state.songs.sort((a, b) => (a.song < b.song) ? -1 : 1)
     }
 
     addSong = (id, song, artist, genre, rating) => {
@@ -30,7 +31,7 @@ class SongOverview extends Component {
                     genre: genre,
                     rating: rating,
                 }
-            ]
+            ].sort((a, b) => (a.song < b.song) ? -1 : 1)
         })
     }
 
