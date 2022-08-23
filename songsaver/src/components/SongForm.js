@@ -29,7 +29,8 @@ const SongForm = ({ addSong }) => {
                     className="inputfield"
                     placeholder="Song"
                     value={song}
-                    onChange={(e) => setSong(e.target.value)}
+                    // onChange={(e) => setSong(e.target.value)}
+                    onChange={(e) => setSong(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))}
                 ></input>
 
                 <input
@@ -38,7 +39,8 @@ const SongForm = ({ addSong }) => {
                     className="inputfield"
                     placeholder="Artist"
                     value={artist}
-                    onChange={(e) => setArtist(e.target.value)}
+                    // onChange={(e) => setArtist(e.target.value)}
+                    onChange={(e) => setArtist(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))}
                 ></input>
 
                 <select value={genre} onChange={(e) => setGenre(e.target.value)}>
@@ -58,6 +60,7 @@ const SongForm = ({ addSong }) => {
                 </select>
 
                 <button onClick={handleSubmit}>Add Song!</button>
+
             </form>
         </div>
     )

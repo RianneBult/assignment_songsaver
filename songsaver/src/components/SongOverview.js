@@ -10,10 +10,10 @@ class SongOverview extends Component {
         this.state =
         {
             songs: [
-                { id: 1, song: "SONG 1", artist: "ARTIST 1", genre: "Pop", rating: "5" },
-                { id: 2, song: "SONG 2", artist: "ARTIST 2", genre: "Jazz", rating: "4" },
-                { id: 3, song: "ASONG", artist: "Artist", genre: "Rock", rating: "1" },
-                { id: 4, song: "KEVER", artist: "Joeee", genre: "Pop", rating: "4" }
+                { id: 1, song: "Song 1", artist: "Artist 1", genre: "Pop", rating: "5" },
+                { id: 2, song: "Song 2", artist: "Artist 2", genre: "Jazz", rating: "4" },
+                { id: 3, song: "Asong", artist: "Artist", genre: "Rock", rating: "1" },
+                { id: 4, song: "Kever", artist: "Joeee", genre: "Pop", rating: "4" }
             ]
         }
         this.state.songs.sort((a, b) => (a.song < b.song) ? -1 : 1)
