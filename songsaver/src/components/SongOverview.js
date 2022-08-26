@@ -35,6 +35,11 @@ class SongOverview extends Component {
         })
     }
 
+    handleRemove = (songId) => {
+        const songs = this.state.songs.filter(item => item.id !== songId)
+        this.setState({ songs: songs })
+    }
+
     render() {
         return (
             <div>
@@ -47,7 +52,7 @@ class SongOverview extends Component {
                         <th className="song-row__item">Rating</th>
                     </tr>
                 </table>
-                <SongList songs={this.state.songs} />
+                <SongList songs={this.state.songs} handleRemove={this.handleRemove} />
             </div>
         )
     }
