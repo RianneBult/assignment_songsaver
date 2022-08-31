@@ -9,7 +9,6 @@ const SongForm = ({ addSong }) => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
-        console.log(`Submitting ${song}`)
         addSong(id, song, artist, genre, rating)
         setId("")
         setSong("")
