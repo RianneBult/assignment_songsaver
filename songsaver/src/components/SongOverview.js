@@ -55,7 +55,7 @@ class SongOverview extends Component {
                         ))}
                     </tbody>
                 </table>
-            </div >
+            </div>
         )
     }
 }
