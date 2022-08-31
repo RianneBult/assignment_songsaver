@@ -1,0 +1,98 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 235, 205, .3);
+    overflow: hidden;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    background-color: blanchedalmond;
+}
+
+.nav-bar{
+    margin: 20px 40px 20px 0;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 20px;
+    background-color: rgb(225, 202, 168);
+    padding: 10px;
+    color: black;
+}
+
+.nav-link:hover{
+    background-color: rgb(225, 202, 168, .6);
+}
+
+.h1-playlist{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form{
+    background-color: rgb(247, 235, 218);
+}
+
+input, select{
+    height: 20px;
+    width: 200px;
+    margin: 20px 60px;
+    outline-color: rgb(213, 189, 153);
+}
+
+.inputfield{
+    text-align: center;
+}
+
+.button-add{
+    height: 40px;
+    width: 100px;
+    margin-left: 10px;
+    background-color: rgb(213, 189, 153);
+    border: none;
+    outline-color: rgb(158, 139, 111);
+    cursor: pointer;
+}
+
+.button-add:hover{
+    background-color: rgb(213, 189, 153, .7);
+}
+
+table{
+    margin: 40px 0 0 20px;
+}
+
+.song-header{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.list-item{
+    text-align: center;
+}
+
+.button-delete{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(190, 164, 126);
+    border: none;
+    cursor: pointer;
+}
+
+.button-delete:hover{
+    background-color: rgb(190, 164, 126, .7);
+}
+
+.h1-about-page{
+    margin-left: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p{
+    margin-left: 20px;
+}

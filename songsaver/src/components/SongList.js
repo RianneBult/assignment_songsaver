@@ -1,23 +1,15 @@
 import React from "react";
 
-import ListItem from "./ListItem";
-
-const SongList = ({ songs, handleRemove }) => {
+const ListItem = ({ song, handleRemove }) => {
     return (
-        <div>
-            <h1>SongList</h1>
-            <ul>
-                {songs.map((song) => (
-                    <ListItem
-                        key={song.id}
-                        song={song}
-                        handleRemove={handleRemove}
-                    />
-                ))}
-            </ul>
-        </div>
+        <tr key={song.id}>
+            <td className="list-item">{song.song}</td>
+            <td className="list-item">{song.artist}</td>
+            <td className="list-item">{song.genre}</td>
+            <td className="list-item">{song.rating}</td>
+            <td><button key={song.id} className="button-delete" onClick={() => handleRemove(song.id)}>Delete Song</button></td>
+        </tr>
     )
 }
 
-
-export default SongList;
+export default ListItem;

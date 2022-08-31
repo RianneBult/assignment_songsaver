@@ -1,26 +1,25 @@
 import React from "react";
-
 import { Link, Route, Routes } from "react-router-dom";
-
 import SongOverview from "./components/SongOverview";
 import About from "./pages/About"
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
+        <ul className="nav-container">
+          <li className="nav-bar">
+            <Link className="nav-link" to="/">Home</Link>
           </li>
-          <li><Link to="/About">About</Link></li>
+          <li className="nav-bar">
+            <Link className="nav-link" to="/About">About</Link>
+          </li>
         </ul>
       </nav>
       <Routes>
         <Route path="/" element={<SongOverview />} />
         <Route path="/About" element={<About />} />
       </Routes>
-      {/* <SongOverview /> */}
     </div>
   )
 }

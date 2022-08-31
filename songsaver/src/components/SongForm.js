@@ -20,16 +20,15 @@ const SongForm = ({ addSong }) => {
 
     return (
         <div>
-            <h1>SongForm</h1>
+            <h1 className="h1-playlist">Playlist!</h1>
             <form>
-
                 <input
                     type="text"
                     name="song"
                     className="inputfield"
                     placeholder="Song"
+                    autoFocus
                     value={song}
-                    // onChange={(e) => setSong(e.target.value)}
                     onChange={(e) => setSong(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))}
                 ></input>
 
@@ -39,7 +38,6 @@ const SongForm = ({ addSong }) => {
                     className="inputfield"
                     placeholder="Artist"
                     value={artist}
-                    // onChange={(e) => setArtist(e.target.value)}
                     onChange={(e) => setArtist(e.target.value.charAt(0).toUpperCase() + e.target.value.slice(1))}
                 ></input>
 
@@ -59,12 +57,10 @@ const SongForm = ({ addSong }) => {
                     <option value="5">5</option>
                 </select>
 
-                <button onClick={handleSubmit}>Add Song!</button>
-
+                <button className="button-add" onClick={handleSubmit}>Add Song!</button>
             </form>
-        </div>
+        </div >
     )
 }
-
 
 export default SongForm;
