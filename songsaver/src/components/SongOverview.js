@@ -1,9 +1,8 @@
-import React, { Component } from "react"
-import SongForm from "./SongForm"
-import SongList from "./SongList"
+import React, { Component } from "react";
+import SongForm from "./SongForm";
+import SongList from "./SongList";
 
 class SongOverview extends Component {
-
     constructor(props) {
         super(props)
         this.state =

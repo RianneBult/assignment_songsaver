@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, Route, Routes } from "react-router-dom";
 import SongOverview from "./components/SongOverview";
-import About from "./pages/About"
+import About from "./pages/About";
 
-function App() {
+const App = () => {
   return (
     <div>
       <nav>
